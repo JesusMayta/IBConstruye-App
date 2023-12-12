@@ -1,36 +1,32 @@
 //Formulario index
-const divInputNombres = document.getElementById('div_input_nombresIndex');
 const indexInputNombres = document.getElementById('nombresIndex');
 const indexInputEmail = document.getElementById('emailIndex');
-
+const indexTextTarea = document.getElementById('messageIndex');
 
 const deleteWhiteSpaces = (text = '') => {
     if (text.length > 0 && text[0] === ' ') text = text.trimStart();
     return text;
 };
 
-
-
-if (window.location.pathname.split('/')[1] === 'index.html') {
+if (window.location.search === '') {
 
     //Formulario página index
-
     indexInputNombres.addEventListener('input', (e) => {
-        const textoPermitido = deleteWhiteSpaces(e.target.value).replace(/[^a-zA-ZáéíóúüñÁÉÍÓÚÜÑ ]/g, '');
-        e.target.value = textoPermitido;
+        e.target.value = deleteWhiteSpaces(e.target.value).replace(/[^a-zA-ZáéíóúüñÁÉÍÓÚÜÑ ]/g, '');
     });
 
     indexInputEmail.addEventListener('input', (e) => {
-        const textoPermitido = deleteWhiteSpaces(e.target.value);
-        e.target.value = textoPermitido;
+        e.target.value = deleteWhiteSpaces(e.target.value);
+    });
+
+    indexTextTarea.addEventListener('input', (e) => {
+        e.target.value = deleteWhiteSpaces(e.target.value);
     });
 
 } else {
 
     // Contacto.php
     const primerDigitoPermitido = ['2', '3', '4', '5', '6', '7'];
-
-    console.log(window.location.search);
 
     //Mensajes de alerta
     const messageCelAlert = document.getElementById('alert_cel');

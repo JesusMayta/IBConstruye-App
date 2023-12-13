@@ -72,6 +72,8 @@
     </footer>
 
     <script src="src/views/js/funtionality.js"></script>
-    <script src="src/views/js/validations.js"></script>
+    <script src="src/views/js/send-message.js"></script>
+    <script async src="src/views/js/validations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

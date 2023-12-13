@@ -9,7 +9,7 @@
                             class="text-2xl sm:text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl text-center text-[#D1DFFA] font-black leading-7 md:leading-10">
                             Soluciones en
                             <span
-                                class="bg-gradient-to-r from-yellow-700 to-[#E9A825]/90 text-transparent bg-clip-text">desarrollo
+                                class="text-[#E9A825]">desarrollo
                                 e
                                 infraestructura</span>
                             al alcance de ti.
@@ -77,7 +77,7 @@
                         <img class="xl:w-full h-60 sm:h-80 xl:h-full rounded-xl shadow-lg shadow-yellow-800"
                             src="src/views/assets/images/img_ingenieros.jpg" alt="people discussing on board" />
                         <div
-                            class="hidden md:block absolute bg-transparent -bottom-8 -right-6 w-0 w-44 xl:w-56 h-24 xl:h-32 rounded-xl border-r-8 border-b-8 border-[#E9A825]">
+                            class="hidden md:block absolute bg-transparent -bottom-8 -right-6 w-44 xl:w-56 h-24 xl:h-32 rounded-xl border-r-8 border-b-8 border-[#E9A825]">
                         </div>
                     </figure>
                 </div>
@@ -453,7 +453,7 @@
                     <h2 class="text-3xl md:text-5xl text-center mb-1 font-extrabold">Escribenos...</h2>
                     <p class="leading-relaxed font-semibold mb-5 text-center">Nos comunicaremos contigo para resolver
                         tus dudas</p>
-                    <form action="">
+                    <form id="form_index" action="src/controller/enviar-correo-index.php" method="post">
                         <div class="relative mb-3">
                             <label for="nombresIndex" class="leading-7 text-sm font-bold">Nombres:</label>
                             <input type="text" id="nombresIndex" name="nombresIndex" placeholder="Ingrese sus nombres"
@@ -472,8 +472,11 @@
                                 class="focus:outline-none w-full bg-white rounded border border-gray-700 h-32 text-base py-1 px-3 leading-6 shadow-xl shadow-yellow-700"
                                 required></textarea>
                         </div>
-                        <button type="submit" class="w-full text-white bg-black py-2 px-6 focus:outline-none hover:bg-gray-900 rounded-lg
-                            text-lg font-bold shadow-xl shadow-yellow-700 border border-gray-300">Enviar</button>
+                        <button type="submit" id="button_form_index" class="w-full text-white bg-black py-2 px-6 focus:outline-none hover:bg-gray-900 rounded-lg
+                            text-lg font-bold shadow-xl shadow-yellow-700 border border-gray-300 flex items-center justify-center gap-x-2">
+                            <div id="loading_index" class="hidden border-t-transparent w-5 h-5 border-2 border-white rounded-full animate-spin"></div>
+                            <span id="text_button">Enviar</span>
+                        </button>
                     </form>
                 </div>
             </div>

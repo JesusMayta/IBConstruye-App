@@ -39,7 +39,7 @@ if(isset($nombres) && isset($email) && isset($message)){
     
         //Recipients
         $mail->setFrom('rimverse@gmail.com', 'Mailer');
-        $mail->addAddress('rimverse@gmail.com');     //Add a recipient
+        $mail->addAddress($email);     //Add a recipient
     
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML

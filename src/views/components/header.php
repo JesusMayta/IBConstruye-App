@@ -18,8 +18,7 @@
     <header class="fixed flex flex-row justify-center h-20 w-screen bg-[#E9A825] z-10 shadow-lg shadow-yellow-700">
         <nav class="w-9/12 flex justify-between items-center relative">
             <figure>
-                <a href="index.php"><img src="src/views/assets/images/ibconstruye.png" alt="logo ibConstruye"
-                        class="w-40 h-14 sm:w-48 sm:h-14 md:w-56 md:h-16 hover:scale-105 duration-500" /></a>
+                <a href="index.php"><img src="src/views/assets/images/ibconstruye.png" alt="logo ibConstruye" class="w-40 h-14 sm:w-48 sm:h-14 md:w-56 md:h-16 hover:scale-105 duration-500" /></a>
             </figure>
 
             <ul class="hidden lg:flex flex-row gap-x-6 list-none font-bold transition-transform pe-6 cursor-pointer">
@@ -48,11 +47,10 @@
                     <h3 class="pt-6 mb-12 ms-11 md:ms-14 border-b border-white text-md md:text-lg">¿Que es lo que
                         buscas?</h3>
                     <ul class="text-md md:text-lg overflow-hidden flex flex-col gap-7 ps-11 md:ps-14">
-                        <li><i class="bi bi-house me-5"></i><a id="click_direction" href="index.php">Inicio</a></li>
-                        <li><i class="bi bi-buildings me-5"></i><a id="click_direction" href="index.php#nosotros">Nosotros</a>
-                        </li>
-                        <li><i class="bi bi-gear me-5"></i><a id="click_direction" href="index.php#servicios">Servicios</a></li>
-                        <li><i class="bi bi-journals me-5"></i><a id="click_direction" href="?page=contacto">Contacto</a></li>
+                        <li><i class="bi bi-house me-5"></i><a id="to_index" href="index.php">Inicio</a></li>
+                        <li><i class="bi bi-buildings me-5"></i><a id="to_us" href="index.php#nosotros">Nosotros</a></li>
+                        <li><i class="bi bi-gear me-5"></i><a id="to_services" href="index.php#servicios">Servicios</a></li>
+                        <li><i class="bi bi-journals me-5"></i><a href="?page=contacto">Contacto</a></li>
                     </ul>
                 </div>
             </div>

@@ -61,7 +61,7 @@ if(isset($cargo) && isset($empresa) && isset($rubro) && isset($ruc) && isset($co
     
         //Recipients
         $mail->setFrom('rimverse@gmail.com', 'Mailer');
-        $mail->addAddress('rimverse@gmail.com');     //Add a recipient
+        $mail->addAddress($correoEmpresa);     //Add a recipient
     
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML

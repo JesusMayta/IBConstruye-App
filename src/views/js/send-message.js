@@ -1,3 +1,19 @@
+const alertMessage = (tipo = '') => {
+    if (tipo === 'success') {
+        Swal.fire({
+            title: "Bien hecho!",
+            text: 'Mensaje enviado con éxito!',
+            icon: "success"
+        });
+    } else {
+        Swal.fire({
+            title: 'Error!',
+            text: 'No se pudo enviar el correo ☹️',
+            icon: 'error',
+        });
+    };
+};
+
 
 $(document).ready(function () {
     $('#form_index').submit(function (e) {
@@ -15,22 +31,13 @@ $(document).ready(function () {
             },
             success: function (res) {
                 $("#form_index")[0].reset();
-                Swal.fire({
-                    title: "Bien hecho!",
-                    text: 'Mensaje enviado con éxito!',
-                    icon: "success"
-                });
-
+                alertMessage('success');
                 $('#button_form_index').removeAttr('disabled');
                 $('#loading_index').addClass('hidden');
                 $('#text_button').text('Enviar');
             },
             error: function (error) {
-                Swal.fire({
-                    title: 'Error!',
-                    text: 'Do you want to continue',
-                    icon: 'error',
-                });
+                alertMessage('error');
             }
         });
     });
@@ -51,22 +58,13 @@ $(document).ready(function () {
             success: function (res) {
 
                 $("#form_contact_persona")[0].reset();
-                Swal.fire({
-                    title: "Bien hecho!",
-                    text: 'Mensaje enviado con éxito!',
-                    icon: "success"
-                });
-
+                alertMessage('success');
                 $('#button_persona').removeAttr('disabled');
                 $('#loading_persona').addClass('hidden');
                 $('#text_persona').text('Enviar');
             },
             error: function (error) {
-                Swal.fire({
-                    title: 'Error!',
-                    text: 'Do you want to continue',
-                    icon: 'error',
-                });
+                alertMessage('error');
             }
         });
     });
@@ -86,22 +84,13 @@ $(document).ready(function () {
             },
             success: function (res) {
                 $("#form_contact_empresa")[0].reset();
-                Swal.fire({
-                    title: "Bien hecho!",
-                    text: 'Mensaje enviado con éxito!',
-                    icon: "success"
-                });
-
+                alertMessage('success');
                 $('#button_empresa').removeAttr('disabled');
                 $('#loading_empresa').addClass('hidden');
                 $('#text_empresa').text('Enviar');
             },
             error: function (error) {
-                Swal.fire({
-                    title: 'Error!',
-                    text: 'Do you want to continue',
-                    icon: 'error',
-                });
+                alertMessage('error');
             }
         });
     });

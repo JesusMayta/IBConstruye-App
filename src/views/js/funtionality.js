@@ -7,26 +7,28 @@ const slider = document.getElementById('slider');
 setInterval(() => {
     const randomeImage = Math.floor(Math.random() * 4);
     slider.style.backgroundImage = `url("src/views/assets/slider_images/${imagesSlider[randomeImage]}")`;
-}, 3000);
-
+}, 5000);
 
 //Responsive menu
 const menuButton = document.getElementById('button_menu');
 const closeMenuButton = document.getElementById('button_close_menu');
 const movileList = document.getElementById('movile_list');
 const opacityMenu = document.getElementById('menu_opacity');
-const clickDirection = document.getElementById('click_direction');
+const clickToIndex = document.getElementById('to_index');
+const clickToUs = document.getElementById('to_us');
+const clickToServices = document.getElementById('to_services');
 
-
-clickDirection.addEventListener('click', () => {
+const animationPage = () => {
     movileList.classList.remove('-translate-x-32');
     movileList.classList.add('translate-x-44')
     opacityMenu.classList.add('hidden');
-});
+};
 
+clickToIndex.addEventListener('click', animationPage);
+clickToUs.addEventListener('click', animationPage);
+clickToServices.addEventListener('click', animationPage);
 
 menuButton.addEventListener('click', () => {
-
     movileList.classList.remove('translate-x-44');
     movileList.classList.add('-translate-x-32');
     opacityMenu.classList.remove('hidden');
@@ -38,9 +40,7 @@ closeMenuButton.addEventListener('click', () => {
     opacityMenu.classList.add('hidden');
 });
 
-
 //Option form
-
 const optionTipo = document.getElementById('tipoPersona');
 const personaNatural = document.getElementById('form_persona_natural');
 const personaEmpresa = document.getElementById('form_persona_empresa');

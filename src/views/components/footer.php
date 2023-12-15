@@ -13,19 +13,19 @@
                     <h2 class="text-white font-bold tracking-widest text-xl md:text-lg mb-3 ">Acerca de nosotros</h2>
                     <ul class="list-none mb-10 text-gray-300 text-start mt-4">
                         <li class="mb-2">
-                            <a class="hover:text-white hover:font-semibold cursor-pointer" href="#"><i
+                            <a class="hover:text-white hover:font-semibold cursor-pointer" href="index.php"><i
                                     class="bi bi-house me-2"></i>Inicio</a>
                         </li>
                         <li class="mb-2">
-                            <a class="hover:text-white hover:font-semibold cursor-pointer" href="#nosotros"><i
+                            <a class="hover:text-white hover:font-semibold cursor-pointer" href="index.php#nosotros"><i
                                     class="bi bi-buildings me-2"></i>Nosotros</a>
                         </li>
                         <li class="mb-2">
-                            <a class="hover:text-white hover:font-semibold cursor-pointer" href="#"><i
+                            <a class="hover:text-white hover:font-semibold cursor-pointer" href="index.php#servicios"><i
                                     class="bi bi-gear me-2"></i>Servicios</a>
                         </li>
                         <li class="mb-2">
-                            <a class="hover:text-white hover:font-semibold cursor-pointer" href="#"><i
+                            <a class="hover:text-white hover:font-semibold cursor-pointer" href="index.php?page=contacto"><i
                                     class="bi bi-journals me-2"></i>Contacto</a>
                         </li>
                     </ul>

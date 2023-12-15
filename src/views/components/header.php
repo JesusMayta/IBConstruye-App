@@ -50,7 +50,7 @@
                         <li><i class="bi bi-house me-5"></i><a id="to_index" href="index.php">Inicio</a></li>
                         <li><i class="bi bi-buildings me-5"></i><a id="to_us" href="index.php#nosotros">Nosotros</a></li>
                         <li><i class="bi bi-gear me-5"></i><a id="to_services" href="index.php#servicios">Servicios</a></li>
-                        <li><i class="bi bi-journals me-5"></i><a href="?page=contacto">Contacto</a></li>
+                        <li><i class="bi bi-journals me-5"></i><a id="to_contact" href="?page=contacto">Contacto</a></li>
                     </ul>
                 </div>
             </div>

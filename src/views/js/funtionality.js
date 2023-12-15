@@ -17,6 +17,7 @@ const opacityMenu = document.getElementById('menu_opacity');
 const clickToIndex = document.getElementById('to_index');
 const clickToUs = document.getElementById('to_us');
 const clickToServices = document.getElementById('to_services');
+const clickToContact = document.getElementById('to_contact');
 
 const animationPage = () => {
     movileList.classList.remove('-translate-x-32');
@@ -27,6 +28,7 @@ const animationPage = () => {
 clickToIndex.addEventListener('click', animationPage);
 clickToUs.addEventListener('click', animationPage);
 clickToServices.addEventListener('click', animationPage);
+clickToContact.addEventListener('click', animationPage);
 
 menuButton.addEventListener('click', () => {
     movileList.classList.remove('translate-x-44');

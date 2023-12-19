@@ -6,7 +6,7 @@ const slider = document.getElementById('slider');
 
 setInterval(() => {
     const randomeImage = Math.floor(Math.random() * 4);
-    slider.style.backgroundImage = `url("src/views/assets/slider_images/${imagesSlider[randomeImage]}")`;
+    if (slider) slider.style.backgroundImage = `url("src/views/assets/slider_images/${imagesSlider[randomeImage]}")`;
 }, 5000);
 
 //Responsive menu
@@ -46,7 +46,6 @@ closeMenuButton.addEventListener('click', () => {
 const optionTipo = document.getElementById('tipoPersona');
 const personaNatural = document.getElementById('form_persona_natural');
 const personaEmpresa = document.getElementById('form_persona_empresa');
-const restForm = document.getElementById('form_general');
 
 if (optionTipo) {
     optionTipo.addEventListener('change', (e) => {
@@ -54,17 +53,14 @@ if (optionTipo) {
             case 'personaNatural':
                 personaNatural.classList.remove('hidden')
                 personaEmpresa.classList.add('hidden');
-                restForm.classList.remove('hidden');
                 break;
             case 'personaEmpresa':
                 personaNatural.classList.add('hidden')
                 personaEmpresa.classList.remove('hidden');
-                restForm.classList.remove('hidden');
                 break;
             case 'unselect':
                 personaEmpresa.classList.add('hidden');
                 personaEmpresa.classList.add('hidden');
-                restForm.classList.add('hidden');
                 break;
         };
     });

@@ -12,7 +12,7 @@
     	include($pagePath);
 	} else {
 	    // Página no encontrada
-	    echo 'Página no encontrada';
+	    include('src/views/pages/404.php');
 	}
 
 	include('src/views/components/footer.php');

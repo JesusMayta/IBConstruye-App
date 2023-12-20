@@ -40,9 +40,7 @@
                         </li>
                         <li class="mb-2">
                             <a class="hover:text-white hover:font-semibold cursor-pointer" href="#"><i
-                                    class="bi bi-geo-alt-fill me-2"></i>Av. Circunvalación Golf Los Incas , Nro 208,
-                                Torre 3
-                                oficina 602B Santiago de Surco</a>
+                                    class="bi bi-geo-alt-fill me-2"></i>Av. Circunvalación Golf Los Incas , Nro 208, Torre 3 oficina 602B Santiago de Surco</a>
                         </li>
                     </ul>
                 </div>
@@ -71,9 +69,9 @@
         </div>
     </footer>
 
-    <script src="src/views/js/funtionality.js"></script>
-    <script src="src/views/js/send-message.js"></script>
-    <script async src="src/views/js/validations.js"></script>
+    <script src="src/views/assets/js/funtionality.js"></script>
+    <script src="src/views/assets/js/send-message.js"></script>
+    <script async src="src/views/assets/js/validations.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

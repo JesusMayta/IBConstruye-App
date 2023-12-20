@@ -82,7 +82,7 @@
 
                 <div class="flex flex-row justify-center gap-4 w-full mt-8 px-6 sm:px-10">
                     <input type="checkbox" class="h-7 w-7 sm:h-5 sm:w-5 cursor-pointer" name="checkPersona" id="checkPersona" required />
-                    <p class="text-sm font-black">Aceptar las <a href="#" class="text-blue-700 font-black underline">condiciones y términos detallados en la sección política de tratamiento de datos personales</a></p>
+                    <p class="text-sm font-black">Aceptar las <a href="src/views/assets/pdfs/Terminos_y_condiciones.pdf" target="_blank" class="text-blue-700 font-black underline">condiciones y términos detallados en la sección política de tratamiento de datos personales</a></p>
                 </div>
 
                 <div class="w-4/5 mx-auto mt-11">
@@ -196,7 +196,7 @@
 
                 <div class="flex flex-row justify-center gap-4 w-full mt-8 px-6 sm:px-10">
                     <input type="checkbox" class="h-7 w-7 sm:h-5 sm:w-5 cursor-pointer" name="checkEmpresa" id="checkEmpresa" required />
-                    <p class="text-sm font-black">Aceptar las <a href="#" class="text-blue-700 font-black underline">condiciones y términos detallados en la sección política de tratamiento de datos personales</a></p>
+                    <p class="text-sm font-black">Aceptar las <a href="src/views/assets/pdfs/Terminos_y_condiciones.pdf" target="_blank" class="text-blue-700 font-black underline">condiciones y términos detallados en la sección política de tratamiento de datos personales</a></p>
                 </div>
 
                 <div class="w-4/5 mx-auto mt-11">
